@@ -1,170 +1,686 @@
 [
   {
-    "title": "DevOps Engineer - January 2026",
-    "company": "Creyos",
-    "company_url": "https://ca.linkedin.com/company/creyos",
-    "scraped_at": "2025-10-30T00:32:08.476469"
-  },
-  {
-    "title": "DevOps Engineer",
-    "company": "KiaKia Finance",
-    "company_url": "https://ng.linkedin.com/company/kiakiafinance",
-    "scraped_at": "2025-10-30T00:32:08.476515"
-  },
-  {
-    "title": "Senior DevOps Engineer",
-    "company": "Ren",
-    "company_url": "https://www.linkedin.com/company/reninc",
-    "scraped_at": "2025-10-30T00:32:08.476548"
-  },
-  {
-    "title": "DevOps Engineer",
-    "company": "CBC",
-    "company_url": "https://www.linkedin.com/company/cbcincai",
-    "scraped_at": "2025-10-30T00:32:08.476579"
-  },
-  {
-    "title": "Site Reliability Engineer (SRE)",
-    "company": "LightFeather",
-    "company_url": "https://www.linkedin.com/company/lightfeather-io",
-    "scraped_at": "2025-10-30T00:32:08.476610"
-  },
-  {
-    "title": "DevOps / Cloud Engineer (Remote - US)",
+    "title": "Middle DevOps Engineer (Remote - Europe)",
     "company": "Jobgether",
     "company_url": "https://be.linkedin.com/company/jobgether",
-    "scraped_at": "2025-10-30T00:32:08.476642"
+    "job_url": "https://www.linkedin.com/jobs/view/4318959049/",
+    "scraped_at": "2025-10-30T01:11:45.292112",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "DevOps and Cloud Engineer",
-    "company": "Talener",
-    "company_url": "https://www.linkedin.com/company/talener",
-    "scraped_at": "2025-10-30T00:32:08.476672"
+    "title": "Senior DevOps Engineer",
+    "company": "Eeze",
+    "company_url": "https://mt.linkedin.com/company/eeze-entertainment",
+    "job_url": "https://www.linkedin.com/jobs/view/4319425938/",
+    "scraped_at": "2025-10-30T01:11:45.292159",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
     "title": "DevOps Engineer",
-    "company": "Exo",
-    "company_url": "https://www.linkedin.com/company/exoeffect",
-    "scraped_at": "2025-10-30T00:32:08.476702"
-  },
-  {
-    "title": "Cloud Engineer (US)",
-    "company": "WALT Labs",
-    "company_url": "https://www.linkedin.com/company/waltlabs",
-    "scraped_at": "2025-10-30T00:32:08.476731"
-  },
-  {
-    "title": "Site Reliability Engineer II",
-    "company": "Vālenz Health®",
-    "company_url": "https://www.linkedin.com/company/valenz",
-    "scraped_at": "2025-10-30T00:32:08.476762"
-  },
-  {
-    "title": "Cloud Engineer II",
-    "company": "EverTrue",
-    "company_url": "https://www.linkedin.com/company/evertrue",
-    "scraped_at": "2025-10-30T00:32:11.092941"
-  },
-  {
-    "title": "Senior Cloud Operations Engineer",
-    "company": "Hamilton Porter",
-    "company_url": "https://www.linkedin.com/company/hamiltonporter",
-    "scraped_at": "2025-10-30T00:32:11.092998"
+    "company": "Hays",
+    "company_url": "https://uk.linkedin.com/company/hays",
+    "job_url": "https://www.linkedin.com/jobs/view/4332848202/",
+    "scraped_at": "2025-10-30T01:11:45.292197",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
     "title": "Senior DevOps Engineer",
-    "company": "Amtex Systems Inc",
-    "company_url": "https://www.linkedin.com/company/amtex-systems-inc",
-    "scraped_at": "2025-10-30T00:32:11.093039"
+    "company": "Eeze",
+    "company_url": "https://mt.linkedin.com/company/eeze-entertainment",
+    "job_url": "https://www.linkedin.com/jobs/view/4319485886/",
+    "scraped_at": "2025-10-30T01:11:45.292232",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "Senior DevOps Engineer",
-    "company": "Wipfli",
-    "company_url": "https://www.linkedin.com/company/wipfli",
-    "scraped_at": "2025-10-30T00:32:11.093078"
+    "title": "Junior Cloud Engineer",
+    "company": "Helic & Co.",
+    "company_url": "https://ca.linkedin.com/company/helicco",
+    "job_url": "https://www.linkedin.com/jobs/view/4332758335/",
+    "scraped_at": "2025-10-30T01:11:45.292267",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
+  },
+  {
+    "title": "Senior Site Reliability Engineer (f/m/d)",
+    "company": "Kraken",
+    "company_url": "https://uk.linkedin.com/company/krakentech",
+    "job_url": "https://www.linkedin.com/jobs/view/4332829807/",
+    "scraped_at": "2025-10-30T01:11:45.292302",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
     "title": "Cloud Engineer",
-    "company": "True Scout Partners",
-    "company_url": "https://www.linkedin.com/company/true-scout-partners",
-    "scraped_at": "2025-10-30T00:32:11.093121"
+    "company": "Strategic Staffing Solutions",
+    "company_url": "https://www.linkedin.com/company/strategic-staffing-solutions",
+    "job_url": "https://www.linkedin.com/jobs/view/4332749978/",
+    "scraped_at": "2025-10-30T01:11:45.292335",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "Site Reliability Engineer (SRE) - Platform Infrastructure team (100% Remote - USA)",
-    "company": "Hopper",
-    "company_url": "https://ca.linkedin.com/company/hopper",
-    "scraped_at": "2025-10-30T00:32:11.093165"
+    "title": "DevOps Engineer | $300K Remote",
+    "company": "Crossing Hurdles",
+    "company_url": "https://www.linkedin.com/company/crossinghurdles",
+    "job_url": "https://www.linkedin.com/jobs/view/4332726636/",
+    "scraped_at": "2025-10-30T01:11:45.292369",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "Senior DevOps Engineer",
-    "company": "Age of Learning",
-    "company_url": "https://www.linkedin.com/company/age-of-learning",
-    "scraped_at": "2025-10-30T00:32:11.093206"
+    "title": "Cloud / PreSales Engineer - (AWS, Docker, Docker Swarm)",
+    "company": "Mayflower Recruitment Ltd",
+    "company_url": "https://www.linkedin.com/company/mayflower-recruitment-limited",
+    "job_url": "https://www.linkedin.com/jobs/view/4318981786/",
+    "scraped_at": "2025-10-30T01:11:45.292402",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "DevOps Engineer, Sr.",
-    "company": "Wiraa",
-    "company_url": "https://in.linkedin.com/company/wiraa",
-    "scraped_at": "2025-10-30T00:32:11.093249"
+    "title": "Intermediate Site Reliability Engineer, GitLab Delivery - Release and Deploy",
+    "company": "GitLab",
+    "company_url": "https://www.linkedin.com/company/gitlab-com",
+    "job_url": "https://www.linkedin.com/jobs/view/4311750142/",
+    "scraped_at": "2025-10-30T01:11:45.292435",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "Cloud Engineer",
-    "company": "Medasource",
-    "company_url": "https://www.linkedin.com/company/medasource",
-    "scraped_at": "2025-10-30T00:32:11.093293"
+    "title": "Principal Product Manager for OpenTelemetry (App SDKs) -  Observability",
+    "company": "Elastic",
+    "company_url": "https://www.linkedin.com/company/elastic-co",
+    "job_url": "https://www.linkedin.com/jobs/view/4311582893/",
+    "scraped_at": "2025-10-30T01:11:47.905326",
+    "category": "devops",
+    "search_title": "DevOps Engineer"
   },
   {
-    "title": "DevOps Engineer",
-    "company": "Creyos",
-    "company_url": "https://ca.linkedin.com/company/creyos",
-    "scraped_at": "2025-10-30T00:32:11.093335"
+    "title": "Platform Engineer I - Serverless Tooling",
+    "company": "Kraken",
+    "company_url": "https://uk.linkedin.com/company/krakentech",
+    "job_url": "https://www.linkedin.com/jobs/view/4333060443/",
+    "scraped_at": "2025-10-30T01:11:58.316576",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Cloud Security Engineer",
-    "company": "Robert Half",
-    "company_url": "https://www.linkedin.com/company/robert-half-international",
-    "scraped_at": "2025-10-30T00:32:13.701211"
+    "title": "Cloud Machine Learning Engineer - EMEA remote",
+    "company": "Jobgether",
+    "company_url": "https://be.linkedin.com/company/jobgether",
+    "job_url": "https://www.linkedin.com/jobs/view/4318947855/",
+    "scraped_at": "2025-10-30T01:11:58.316596",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Senior DevOps Engineer",
-    "company": "Veeva Systems",
-    "company_url": "https://www.linkedin.com/company/veeva-systems",
-    "scraped_at": "2025-10-30T00:32:13.701276"
+    "title": "Principal Cloud Platform Engineer",
+    "company": "hackajob",
+    "company_url": "https://uk.linkedin.com/company/hackajob",
+    "job_url": "https://www.linkedin.com/jobs/view/4307605490/",
+    "scraped_at": "2025-10-30T01:11:58.316615",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Staff Site Reliability Engineer",
-    "company": "Optomi",
-    "company_url": "https://www.linkedin.com/company/optomi",
-    "scraped_at": "2025-10-30T00:32:13.701320"
+    "title": "Senior Technical Product Engineer - Cortex Cloud",
+    "company": "Palo Alto Networks",
+    "company_url": "https://www.linkedin.com/company/palo-alto-networks",
+    "job_url": "https://www.linkedin.com/jobs/view/4332749570/",
+    "scraped_at": "2025-10-30T01:11:58.316688",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Senior DevOps Engineer",
-    "company": "UserTesting",
-    "company_url": "https://www.linkedin.com/company/usertesting-com",
-    "scraped_at": "2025-10-30T00:32:13.701362"
+    "title": "Cloud Architect",
+    "company": "ADVANTIQ",
+    "company_url": "https://uk.linkedin.com/company/advantiqsolutions",
+    "job_url": "https://www.linkedin.com/jobs/view/4332758534/",
+    "scraped_at": "2025-10-30T01:12:01.029436",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Senior Cloud Solutions Engineer",
-    "company": "Headspace",
-    "company_url": "https://www.linkedin.com/company/headspace-meditation-limited",
-    "scraped_at": "2025-10-30T00:32:13.701403"
+    "title": "Backend Engineer, Contract | Python (Django), JavaScript (React) and SQL (MySQL) | Fully Remote / EU-Based | Rate £550-650pd, Outside IR35 | 12-months Contract Length",
+    "company": "Owen Thomas | Pending B Corp™",
+    "company_url": "https://uk.linkedin.com/company/owen-thomas-talent",
+    "job_url": "https://www.linkedin.com/jobs/view/4332838249/",
+    "scraped_at": "2025-10-30T01:12:01.029492",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Cloud Dev Ops Engineer II (Azure)",
-    "company": "Performance Food Group",
-    "company_url": "https://www.linkedin.com/company/performancefoodgroup",
-    "scraped_at": "2025-10-30T00:32:13.701447"
+    "title": "Product Engineer - TypeScript/ Node/ AWS/ Systems Architecture - AI Product Company (clean energy) - Remote - £80k",
+    "company": "Opus Recruitment Solutions",
+    "company_url": "https://uk.linkedin.com/company/opus-recruitment-solutions",
+    "job_url": "https://www.linkedin.com/jobs/view/4319338126/",
+    "scraped_at": "2025-10-30T01:12:01.029566",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Senior Site Reliability Engineer",
-    "company": "GOVX",
-    "company_url": "https://www.linkedin.com/company/govx-inc",
-    "scraped_at": "2025-10-30T00:32:13.701492"
+    "title": "Senior Machine Learning Engineer - Speech / Voice AI (remote)",
+    "company": "Robert Walters",
+    "company_url": "https://uk.linkedin.com/company/robert-walters",
+    "job_url": "https://www.linkedin.com/jobs/view/4318951083/",
+    "scraped_at": "2025-10-30T01:12:01.029602",
+    "category": "devops",
+    "search_title": "Platform Engineer"
   },
   {
-    "title": "Sr. DevOps Engineer",
-    "company": "RemoteHunter",
-    "company_url": "https://www.linkedin.com/company/remotehunter",
-    "scraped_at": "2025-10-30T00:32:13.701535"
+    "title": "Principal PHP Developer",
+    "company": "ByteHire",
+    "company_url": "https://uk.linkedin.com/company/byte-hire",
+    "job_url": "https://www.linkedin.com/jobs/view/4319051435/",
+    "scraped_at": "2025-10-30T01:12:01.029637",
+    "category": "devops",
+    "search_title": "Platform Engineer"
+  },
+  {
+    "title": "Senior MLE - Blockchain AI",
+    "company": "Harnham",
+    "company_url": "https://uk.linkedin.com/company/harnham",
+    "job_url": "https://www.linkedin.com/jobs/view/4309606730/",
+    "scraped_at": "2025-10-30T01:12:01.029681",
+    "category": "devops",
+    "search_title": "Platform Engineer"
+  },
+  {
+    "title": "Senior Full Stack Developer (Symfony/Angular)",
+    "company": "SearchWorks",
+    "company_url": "https://uk.linkedin.com/company/searchworkslimited",
+    "job_url": "https://www.linkedin.com/jobs/view/4332431266/",
+    "scraped_at": "2025-10-30T01:12:01.029717",
+    "category": "devops",
+    "search_title": "Platform Engineer"
+  },
+  {
+    "title": "Technical Client Success Specialist",
+    "company": "Vable",
+    "company_url": "https://uk.linkedin.com/company/vable",
+    "job_url": "https://www.linkedin.com/jobs/view/4314858220/",
+    "scraped_at": "2025-10-30T01:12:01.029752",
+    "category": "devops",
+    "search_title": "Platform Engineer"
+  },
+  {
+    "title": "StairLift Service Engineer",
+    "company": "Orona",
+    "company_url": "https://es.linkedin.com/company/orona",
+    "job_url": "https://www.linkedin.com/jobs/view/4319517643/",
+    "scraped_at": "2025-10-30T01:12:01.029787",
+    "category": "devops",
+    "search_title": "Platform Engineer"
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "Eeze",
+    "company_url": "https://mt.linkedin.com/company/eeze-entertainment",
+    "job_url": "https://www.linkedin.com/jobs/view/4319575658/",
+    "scraped_at": "2025-10-30T01:12:11.188285",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Infrastructure Engineer",
+    "company": "Understanding Recruitment NFP",
+    "company_url": "https://uk.linkedin.com/company/understanding-recruitment-nfp",
+    "job_url": "https://www.linkedin.com/jobs/view/4318997011/",
+    "scraped_at": "2025-10-30T01:12:11.188397",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Cloud Engineer Consultant - SC Eligible",
+    "company": "Stealth iT Consulting",
+    "company_url": "https://uk.linkedin.com/company/stealth-it-consulting",
+    "job_url": "https://www.linkedin.com/jobs/view/4324702490/",
+    "scraped_at": "2025-10-30T01:12:11.188444",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer - Labyrinth Screening",
+    "company": "Ripjar",
+    "company_url": "https://uk.linkedin.com/company/ripjar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332888799/",
+    "scraped_at": "2025-10-30T01:12:13.896759",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Junior Software Engineer",
+    "company": "Haystack",
+    "company_url": "https://uk.linkedin.com/company/wearehaystack",
+    "job_url": "https://www.linkedin.com/jobs/view/4319393198/",
+    "scraped_at": "2025-10-30T01:12:13.896835",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer - Labyrinth Screening",
+    "company": "Ripjar",
+    "company_url": "https://uk.linkedin.com/company/ripjar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332898741/",
+    "scraped_at": "2025-10-30T01:12:13.896867",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Network Reliability Engineer - Elite FinTech – Remote- Up to £130,000 Starting base + Bonus/Benefits",
+    "company": "Hunter Bond",
+    "company_url": "https://uk.linkedin.com/company/hunter-bond",
+    "job_url": "https://www.linkedin.com/jobs/view/4324738304/",
+    "scraped_at": "2025-10-30T01:12:13.896899",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer - Labyrinth Screening",
+    "company": "Ripjar",
+    "company_url": "https://uk.linkedin.com/company/ripjar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332789412/",
+    "scraped_at": "2025-10-30T01:12:13.896930",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer - Labyrinth Screening",
+    "company": "Ripjar",
+    "company_url": "https://uk.linkedin.com/company/ripjar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332918584/",
+    "scraped_at": "2025-10-30T01:12:13.896959",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Oscar",
+    "company_url": "https://uk.linkedin.com/company/oscar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332789982/",
+    "scraped_at": "2025-10-30T01:12:13.896989",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Cloud Solution Architect, Security",
+    "company": "Microsoft",
+    "company_url": "https://www.linkedin.com/company/microsoft",
+    "job_url": "https://www.linkedin.com/jobs/view/4332871845/",
+    "scraped_at": "2025-10-30T01:12:13.897019",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer (Roadmap & Systems Design)",
+    "company": "FoundationX Technologies",
+    "company_url": "https://www.linkedin.com/company/foundationx-technologies",
+    "job_url": "https://www.linkedin.com/jobs/view/4332808559/",
+    "scraped_at": "2025-10-30T01:12:13.897048",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Engr III SW",
+    "company": "Fanatics",
+    "company_url": "https://www.linkedin.com/company/fanatics-inc-",
+    "job_url": "https://www.linkedin.com/jobs/view/4309251518/",
+    "scraped_at": "2025-10-30T01:12:17.534450",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Planet Pharma",
+    "company_url": "https://www.linkedin.com/company/planet-pharma",
+    "job_url": "https://www.linkedin.com/jobs/view/4319356297/",
+    "scraped_at": "2025-10-30T01:12:17.534488",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Cloud Solution Architect, Security",
+    "company": "Microsoft",
+    "company_url": "https://www.linkedin.com/company/microsoft",
+    "job_url": "https://www.linkedin.com/jobs/view/4332871848/",
+    "scraped_at": "2025-10-30T01:12:17.534518",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer (Remote)",
+    "company": "AI Jobs",
+    "company_url": "https://www.linkedin.com/company/ai-jobss",
+    "job_url": "https://www.linkedin.com/jobs/view/4332747905/",
+    "scraped_at": "2025-10-30T01:12:17.534547",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer, Summer Intern Uk",
+    "company": "Bending Spoons",
+    "company_url": "https://it.linkedin.com/company/bendingspoons",
+    "job_url": "https://www.linkedin.com/jobs/view/4319567047/",
+    "scraped_at": "2025-10-30T01:12:17.534576",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer, Core Replication",
+    "company": "Redpanda Data",
+    "company_url": "https://www.linkedin.com/company/redpanda-data",
+    "job_url": "https://www.linkedin.com/jobs/view/4254142715/",
+    "scraped_at": "2025-10-30T01:12:17.534603",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "OpenSolar",
+    "company_url": "https://au.linkedin.com/company/opensolar",
+    "job_url": "https://www.linkedin.com/jobs/view/4318972310/",
+    "scraped_at": "2025-10-30T01:12:17.534631",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer (Go / K8s) - Observability",
+    "company": "Elastic",
+    "company_url": "https://www.linkedin.com/company/elastic-co",
+    "job_url": "https://www.linkedin.com/jobs/view/4332908111/",
+    "scraped_at": "2025-10-30T01:12:17.534658",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Embedded Software Engineer",
+    "company": "83zero",
+    "company_url": "https://uk.linkedin.com/company/83zero-ltd",
+    "job_url": "https://www.linkedin.com/jobs/view/4313361714/",
+    "scraped_at": "2025-10-30T01:12:17.534713",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer III, Front End",
+    "company": "Dataminr",
+    "company_url": "https://www.linkedin.com/company/dataminr",
+    "job_url": "https://www.linkedin.com/jobs/view/4309268657/",
+    "scraped_at": "2025-10-30T01:12:20.190027",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "Harrington Starr",
+    "company_url": "https://uk.linkedin.com/company/harrington-starr",
+    "job_url": "https://www.linkedin.com/jobs/view/4332767959/",
+    "scraped_at": "2025-10-30T01:12:20.190066",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Ripjar",
+    "company_url": "https://uk.linkedin.com/company/ripjar",
+    "job_url": "https://www.linkedin.com/jobs/view/4332839617/",
+    "scraped_at": "2025-10-30T01:12:20.190095",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "PHP Fullstack Software Engineer",
+    "company": "ThriveCart",
+    "company_url": "https://www.linkedin.com/company/thrivecart",
+    "job_url": "https://www.linkedin.com/jobs/view/4332776372/",
+    "scraped_at": "2025-10-30T01:12:20.190124",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Senior Software Engineer / Staff Engineer / Architect",
+    "company": "Mission.dev",
+    "company_url": "https://ca.linkedin.com/company/mission-dev",
+    "job_url": "https://www.linkedin.com/jobs/view/4317245206/",
+    "scraped_at": "2025-10-30T01:12:20.190152",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer (GenAI-Focused) - House Interactions",
+    "company": "DoiT",
+    "company_url": "https://www.linkedin.com/company/doitintl",
+    "job_url": "https://www.linkedin.com/jobs/view/4318923904/",
+    "scraped_at": "2025-10-30T01:12:20.190180",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer - AI Expert",
+    "company": "Mercor",
+    "company_url": "https://www.linkedin.com/company/mercor-ai",
+    "job_url": "https://www.linkedin.com/jobs/view/4332934984/",
+    "scraped_at": "2025-10-30T01:12:20.190206",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Lead Software Engineer",
+    "company": "SquaredUp",
+    "company_url": "https://uk.linkedin.com/company/squared-up-limited",
+    "job_url": "https://www.linkedin.com/jobs/view/4298713549/",
+    "scraped_at": "2025-10-30T01:12:20.190233",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Software Engineer - Risk Platform Group (Remote, ROU, UK, IRE)",
+    "company": "CrowdStrike",
+    "company_url": "https://www.linkedin.com/company/crowdstrike",
+    "job_url": "https://www.linkedin.com/jobs/view/4309501533/",
+    "scraped_at": "2025-10-30T01:12:20.190260",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Sr. Software Engineer",
+    "company": "Mercor",
+    "company_url": "https://www.linkedin.com/company/mercor-ai",
+    "job_url": "https://www.linkedin.com/jobs/view/4332865377/",
+    "scraped_at": "2025-10-30T01:12:20.190288",
+    "category": "devops",
+    "search_title": "Cloud Engineer"
+  },
+  {
+    "title": "Systems Engineer",
+    "company": "Ensono",
+    "company_url": "https://www.linkedin.com/company/ensono",
+    "job_url": "https://www.linkedin.com/jobs/view/4300740494/",
+    "scraped_at": "2025-10-30T01:12:25.423201",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Junior Software Quality Engineer",
+    "company": "Helic & Co.",
+    "company_url": "https://ca.linkedin.com/company/helicco",
+    "job_url": "https://www.linkedin.com/jobs/view/4332838214/",
+    "scraped_at": "2025-10-30T01:12:25.423304",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Graduate Software Engineer",
+    "company": "Haystack",
+    "company_url": "https://uk.linkedin.com/company/wearehaystack",
+    "job_url": "https://www.linkedin.com/jobs/view/4319472144/",
+    "scraped_at": "2025-10-30T01:12:28.326956",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Instrumentation and Control Engineer",
+    "company": "Major Recruitment",
+    "company_url": "https://uk.linkedin.com/company/major-recruitment",
+    "job_url": "https://www.linkedin.com/jobs/view/4324752315/",
+    "scraped_at": "2025-10-30T01:12:28.326998",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Prism Digital",
+    "company_url": "https://uk.linkedin.com/company/prism-digital",
+    "job_url": "https://www.linkedin.com/jobs/view/4318989954/",
+    "scraped_at": "2025-10-30T01:12:28.327031",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Senior Software Engineer (AI HealthTech) - Up to £100k + Bonus + Equity - FULLY REMOTE",
+    "company": "Hunter Bond",
+    "company_url": "https://uk.linkedin.com/company/hunter-bond",
+    "job_url": "https://www.linkedin.com/jobs/view/4324704144/",
+    "scraped_at": "2025-10-30T01:12:28.327064",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Senior Software Engineer (Go) - UK Faster Payments",
+    "company": "Jobgether",
+    "company_url": "https://be.linkedin.com/company/jobgether",
+    "job_url": "https://www.linkedin.com/jobs/view/4318455205/",
+    "scraped_at": "2025-10-30T01:12:28.327126",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "AI Software Engineer, Contract, Backend Focus | Python, C++/C#, ML & LLMs | AWS/Azure | Data Handling | Renewable Energy Innovation Hub | £575-700/day, Outside | 6-month + | Remote, UK",
+    "company": "Owen Thomas | Pending B Corp™",
+    "company_url": "https://uk.linkedin.com/company/owen-thomas-talent",
+    "job_url": "https://www.linkedin.com/jobs/view/4332887711/",
+    "scraped_at": "2025-10-30T01:12:28.327219",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Senior Cloud Platform Engineer",
+    "company": "Mapbox",
+    "company_url": "https://www.linkedin.com/company/mapbox",
+    "job_url": "https://www.linkedin.com/jobs/view/4332841958/",
+    "scraped_at": "2025-10-30T01:12:28.327250",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Haystack",
+    "company_url": "https://uk.linkedin.com/company/wearehaystack",
+    "job_url": "https://www.linkedin.com/jobs/view/4319376568/",
+    "scraped_at": "2025-10-30T01:12:31.242953",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Copper.co",
+    "company_url": "https://uk.linkedin.com/company/copperco",
+    "job_url": "https://www.linkedin.com/jobs/view/4332980187/",
+    "scraped_at": "2025-10-30T01:12:31.243009",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Haystack",
+    "company_url": "https://uk.linkedin.com/company/wearehaystack",
+    "job_url": "https://www.linkedin.com/jobs/view/4319495271/",
+    "scraped_at": "2025-10-30T01:12:31.243052",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Senior Staff Software Engineer",
+    "company": "Equinix",
+    "company_url": "https://www.linkedin.com/company/equinix",
+    "job_url": "https://www.linkedin.com/jobs/view/4300732579/",
+    "scraped_at": "2025-10-30T01:12:31.243090",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Java Software Engineer",
+    "company": "Stealth iT Consulting",
+    "company_url": "https://uk.linkedin.com/company/stealth-it-consulting",
+    "job_url": "https://www.linkedin.com/jobs/view/4318996408/",
+    "scraped_at": "2025-10-30T01:12:31.243160",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Freelance Software Engineer – Remote",
+    "company": "Twine",
+    "company_url": "https://uk.linkedin.com/company/twine-net",
+    "job_url": "https://www.linkedin.com/jobs/view/4324741101/",
+    "scraped_at": "2025-10-30T01:12:31.243196",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Principal Network Engineer",
+    "company": "Eden Scott",
+    "company_url": "https://uk.linkedin.com/company/eden-scott",
+    "job_url": "https://www.linkedin.com/jobs/view/4324702247/",
+    "scraped_at": "2025-10-30T01:12:31.243230",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Search - Developer Tooling - C#/.NET Senior Software Engineer",
+    "company": "Elastic",
+    "company_url": "https://www.linkedin.com/company/elastic-co",
+    "job_url": "https://www.linkedin.com/jobs/view/4311523860/",
+    "scraped_at": "2025-10-30T01:12:33.884230",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Sr. Software Engineer  - Windows Sensor (Remote)",
+    "company": "CrowdStrike",
+    "company_url": "https://www.linkedin.com/company/crowdstrike",
+    "job_url": "https://www.linkedin.com/jobs/view/4299275630/",
+    "scraped_at": "2025-10-30T01:12:33.884289",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Sr. Software Engineer - Windows Sensor (Remote, GBR)",
+    "company": "CrowdStrike",
+    "company_url": "https://www.linkedin.com/company/crowdstrike",
+    "job_url": "https://www.linkedin.com/jobs/view/4299256819/",
+    "scraped_at": "2025-10-30T01:12:33.884335",
+    "category": "devops",
+    "search_title": "Site Reliability Engineer"
+  },
+  {
+    "title": "Customer Software Engineer - Forward Deployed Agentic Engineer (f/m/d) Remote Europe",
+    "company": "Otera",
+    "company_url": "https://at.linkedin.com/company/we-are-otera",
+    "job_url": "https://www.linkedin.com/jobs/view/4332859725/",
+    "scraped_at": "2025-10-30T01:13:04.543623",
+    "category": "devops",
+    "search_title": "GCP Cloud Engineer"
+  },
+  {
+    "title": "Lead Software Engineer (AI)",
+    "company": "InterQuest Group",
+    "company_url": "https://uk.linkedin.com/company/interquest-group",
+    "job_url": "https://www.linkedin.com/jobs/view/4332889449/",
+    "scraped_at": "2025-10-30T01:13:04.543648",
+    "category": "devops",
+    "search_title": "GCP Cloud Engineer"
   }
 ]

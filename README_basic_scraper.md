@@ -5,6 +5,7 @@ A lightweight Python script that extracts only the essential information from Li
 - Company name
 - Company LinkedIn URL
 - Job posting URL (for unique identification)
+- Category and search title (for multi-category searches)
 
 This scraper is optimized for speed by skipping the time-consuming step of fetching individual job description pages.
 
@@ -12,7 +13,9 @@ This scraper is optimized for speed by skipping the time-consuming step of fetch
 
 - Fast scraping by only parsing search results pages
 - Configurable search parameters (keywords, location, job type)
-- Duplicate removal based on job title and company
+- Support for multiple job categories with multiple titles per category
+- Smart page skipping (stops after 2 consecutive pages with no jobs)
+- Duplicate removal based on job URL (most reliable)
 - Export to CSV and JSON formats
 - Retry logic with exponential backoff
 - Proxy support
@@ -47,13 +50,42 @@ python basic_linkedin_scraper.py
 
 ## Configuration Options
 
-- `keywords`: Job search keywords (default: "software developer")
+- `categories`: Dictionary of job categories with arrays of job titles (see example config)
 - `location`: Job location (default: "United States")
 - `job_type`: Job type filter (0=onsite, 1=hybrid, 2=remote, empty=any)
 - `timespan`: Time filter (r84600 = 24 hours, r604800 = 1 week)
 - `pages_to_scrape`: Number of pages to scrape (default: 5)
 - `headers`: HTTP headers for requests
 - `proxies`: Proxy configuration (optional)
+
+### Category Configuration
+
+The scraper supports multiple job categories, each with multiple job titles:
+
+```json
+{
+  "categories": {
+    "devops": [
+      "DevOps Engineer",
+      "Platform Engineer",
+      "Cloud Engineer",
+      "Site Reliability Engineer",
+      "AWS Cloud Engineer",
+      "Azure Cloud Engineer",
+      "GCP Cloud Engineer",
+      "Cloud Infrastructure Engineer"
+    ],
+    "developer": [
+      "Software Developer",
+      "Python Developer",
+      "Backend Engineer",
+      "Full Stack Developer"
+    ]
+  }
+}
+```
+
+The scraper will search for each title in each category, automatically removing duplicates across all categories.
 
 ## Output
 
@@ -66,6 +98,8 @@ Each job entry contains:
 - `company`: Company name
 - `company_url`: Clean LinkedIn URL for the company (tracking parameters removed)
 - `job_url`: Direct URL to the job posting (unique identifier)
+- `category`: Category name the job was found under
+- `search_title`: Specific job title that was searched for
 - `scraped_at`: Timestamp when the job was scraped
 
 ## Example Output
@@ -77,13 +111,17 @@ Each job entry contains:
     "company": "Tech Corp",
     "company_url": "https://www.linkedin.com/company/tech-corp",
     "job_url": "https://www.linkedin.com/jobs/view/123456789/",
+    "category": "developer",
+    "search_title": "Python Developer",
     "scraped_at": "2023-11-15T14:30:22.123456"
   },
   {
-    "title": "Backend Engineer",
-    "company": "StartupXYZ",
-    "company_url": "https://www.linkedin.com/company/startupxyz",
+    "title": "DevOps Engineer",
+    "company": "CloudTech Inc",
+    "company_url": "https://www.linkedin.com/company/cloudtech",
     "job_url": "https://www.linkedin.com/jobs/view/987654321/",
+    "category": "devops",
+    "search_title": "DevOps Engineer",
     "scraped_at": "2023-11-15T14:30:22.123456"
   }
 ]
@@ -100,8 +138,17 @@ This scraper is significantly faster than full-featured scrapers because:
 - It only makes requests to search results pages (not individual job pages)
 - It extracts minimal information from each page
 - It avoids processing large job description texts
+- It intelligently skips pages when no jobs are found
 
 Typical performance: 5 pages of results (125 jobs) in under 30 seconds.
+
+### Smart Page Skipping
+
+The scraper includes intelligent page skipping to improve efficiency:
+- Stops searching for a specific job title after 2 consecutive pages with no results
+- Prevents unnecessary requests for titles that have limited job postings
+- Significantly reduces scraping time for niche job titles
+- Example: If "GCP Cloud Engineer" returns no jobs for 2 consecutive pages, the scraper moves to the next title
 
 ## Notes
 

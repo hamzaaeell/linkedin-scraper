@@ -51,8 +51,18 @@ class BasicLinkedInScraper:
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
             },
             "proxies": {},
-            "keywords": "software developer",
-            "location": "United States",
+            "categories": {
+                "devops": [
+                    "DevOps Engineer",
+                    "Platform Engineer",
+                    "Cloud Engineer",
+                    "Site Reliability Engineer",
+                    "AWS Cloud Engineer",
+                    "Azure Cloud Engineer",
+                    "Cloud Infrastructure Engineer"
+                ]
+            },
+            "location": "United Kingdom",
             "job_type": "2",  # 0=onsite, 1=hybrid, 2=remote, empty=any
             "timespan": "r84600",  # r84600 = 24 hours, r604800 = 1 week
             "pages_to_scrape": 5
@@ -191,12 +201,47 @@ class BasicLinkedInScraper:
             list: List of job dictionaries with basic information
         """
         all_jobs = []
-        keywords = quote(self.config['keywords'])
         location = quote(self.config['location'])
         job_type = self.config['job_type']
         timespan = self.config['timespan']
+        categories = self.config.get('categories', {})
         
-        print(f"Scraping jobs for: {self.config['keywords']} in {self.config['location']}")
+        # If no categories defined, fall back to single keyword search
+        if not categories:
+            keywords = quote(self.config.get('keywords', 'software developer'))
+            self._scrape_category(all_jobs, keywords, location, job_type, timespan, "default")
+        else:
+            # Scrape each category
+            for category_name, titles in categories.items():
+                print(f"\n=== Scraping category: {category_name} ===")
+                for title in titles:
+                    print(f"  Searching for: {title}")
+                    keywords = quote(title)
+                    self._scrape_category(all_jobs, keywords, location, job_type, timespan, category_name, title)
+        
+        print(f"\nTotal job cards scraped: {len(all_jobs)}")
+        
+        # Remove duplicates across all categories
+        all_jobs = self.remove_duplicates(all_jobs)
+        print(f"Jobs after removing duplicates: {len(all_jobs)}")
+        
+        return all_jobs
+    
+    def _scrape_category(self, all_jobs, keywords, location, job_type, timespan, category_name, title=None):
+        """
+        Scrape jobs for a specific category/title
+        
+        Args:
+            all_jobs (list): List to append jobs to
+            keywords (str): URL-encoded keywords
+            location (str): URL-encoded location
+            job_type (str): Job type filter
+            timespan (str): Time filter
+            category_name (str): Name of the category
+            title (str): Specific title being searched (optional)
+        """
+        consecutive_zero_pages = 0
+        max_consecutive_zero_pages = 2  # Stop after 2 consecutive pages with no jobs
         
         # Scrape multiple pages
         for page in range(self.config['pages_to_scrape']):
@@ -205,26 +250,44 @@ class BasicLinkedInScraper:
                    f"?keywords={keywords}&location={location}&f_TPR=&f_WT={job_type}"
                    f"&geoId=&f_TPR={timespan}&start={start}")
             
-            print(f"Scraping page {page + 1}: {url}")
+            print(f"    Scraping page {page + 1}")
             soup = self.get_with_retry(url)
             
             if soup:
                 jobs = self.extract_basic_job_info(soup)
+                # Add category information to each job
+                for job in jobs:
+                    job['category'] = category_name
+                    if title:
+                        job['search_title'] = title
+                
                 all_jobs.extend(jobs)
-                print(f"Found {len(jobs)} jobs on page {page + 1}")
+                jobs_found = len(jobs)
+                print(f"    Found {jobs_found} jobs on page {page + 1}")
+                
+                # If no jobs found, increment counter
+                if jobs_found == 0:
+                    consecutive_zero_pages += 1
+                    print(f"    No jobs found for {consecutive_zero_pages} consecutive page(s)")
+                    
+                    # Stop if we've had too many consecutive pages with no jobs
+                    if consecutive_zero_pages >= max_consecutive_zero_pages:
+                        print(f"    Stopping search for '{title}' after {max_consecutive_zero_pages} consecutive pages with no jobs")
+                        break
+                else:
+                    # Reset counter if we found jobs
+                    consecutive_zero_pages = 0
             else:
-                print(f"Failed to fetch page {page + 1}")
+                print(f"    Failed to fetch page {page + 1}")
+                consecutive_zero_pages += 1  # Count failed pages as zero results
+                
+                # Stop if we've had too many consecutive failures
+                if consecutive_zero_pages >= max_consecutive_zero_pages:
+                    print(f"    Stopping search for '{title}' after {max_consecutive_zero_pages} consecutive failed pages")
+                    break
             
             # Delay between requests to avoid rate limiting
             tm.sleep(2)
-        
-        print(f"Total job cards scraped: {len(all_jobs)}")
-        
-        # Remove duplicates
-        all_jobs = self.remove_duplicates(all_jobs)
-        print(f"Jobs after removing duplicates: {len(all_jobs)}")
-        
-        return all_jobs
     
     def save_to_csv(self, jobs, filename='basic_linkedin_jobs.csv'):
         """
@@ -272,19 +335,8 @@ def main():
         scraper = BasicLinkedInScraper(config_file=config_file)
     else:
         print("Using default configuration")
-        # Configuration inline
-        config = {
-            "keywords": "Devops Engineer",
-            "location": "United States",
-            "job_type": "2",  # 2 = remote
-            "timespan": "r84600",  # Last 24 hours
-            "pages_to_scrape": 3,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-            }
-        }
-        # Initialize scraper with inline config
-        scraper = BasicLinkedInScraper(config)
+        # Initialize scraper with default config
+        scraper = BasicLinkedInScraper()
     
     # Scrape jobs
     jobs = scraper.scrape_jobs()

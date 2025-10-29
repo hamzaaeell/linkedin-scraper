@@ -1,5 +1,22 @@
 {
-  "keywords": "software developer",
+  "categories": {
+    "devops": [
+      "DevOps Engineer",
+      "Platform Engineer",
+      "Cloud Engineer",
+      "Site Reliability Engineer",
+      "AWS Cloud Engineer",
+      "Azure Cloud Engineer",
+      "GCP Cloud Engineer",
+      "Cloud Infrastructure Engineer"
+    ],
+    "developer": [
+      "Software Developer",
+      "Python Developer",
+      "Backend Engineer",
+      "Full Stack Developer"
+    ]
+  },
   "location": "United States",
   "job_type": "2",
   "timespan": "r84600",
