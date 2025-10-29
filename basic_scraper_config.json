@@ -17,7 +17,15 @@
       "Full Stack Developer"
     ]
   },
-  "location": "United States",
+  "locations": [
+    "United States",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Australia",
+    "Canada",
+    "Bahrain",
+    "Qatar"
+  ],
   "job_type": "2",
   "timespan": "r84600",
   "pages_to_scrape": 5,

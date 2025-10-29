@@ -62,7 +62,14 @@ class BasicLinkedInScraper:
                     "Cloud Infrastructure Engineer"
                 ]
             },
-            "location": "United Kingdom",
+            "locations": [
+                "United Kingdom",
+                "Saudi Arabia",
+                "United Arab Emirates",
+                "Australia",
+                "Canada",
+                "Bahrain",
+            ],
             "job_type": "2",  # 0=onsite, 1=hybrid, 2=remote, empty=any
             "timespan": "r84600",  # r84600 = 24 hours, r604800 = 1 week
             "pages_to_scrape": 5
@@ -201,27 +208,35 @@ class BasicLinkedInScraper:
             list: List of job dictionaries with basic information
         """
         all_jobs = []
-        location = quote(self.config['location'])
         job_type = self.config['job_type']
         timespan = self.config['timespan']
         categories = self.config.get('categories', {})
         
+        # Get locations from config
+        locations = self.config.get('locations', [self.config.get('location', 'United States')])
+        
         # If no categories defined, fall back to single keyword search
         if not categories:
             keywords = quote(self.config.get('keywords', 'software developer'))
-            self._scrape_category(all_jobs, keywords, location, job_type, timespan, "default")
+            for location in locations:
+                location_encoded = quote(location)
+                print(f"\n=== Scraping location: {location} ===")
+                self._scrape_category(all_jobs, keywords, location_encoded, job_type, timespan, "default", None, location)
         else:
-            # Scrape each category
+            # Scrape each category across all locations
             for category_name, titles in categories.items():
                 print(f"\n=== Scraping category: {category_name} ===")
                 for title in titles:
                     print(f"  Searching for: {title}")
                     keywords = quote(title)
-                    self._scrape_category(all_jobs, keywords, location, job_type, timespan, category_name, title)
+                    for location in locations:
+                        location_encoded = quote(location)
+                        print(f"    In location: {location}")
+                        self._scrape_category(all_jobs, keywords, location_encoded, job_type, timespan, category_name, title, location)
         
         print(f"\nTotal job cards scraped: {len(all_jobs)}")
         
-        # Remove duplicates across all categories
+        # Remove duplicates across all categories and locations
         all_jobs = self.remove_duplicates(all_jobs)
         print(f"Jobs after removing duplicates: {len(all_jobs)}")
         
@@ -255,9 +270,10 @@ class BasicLinkedInScraper:
             
             if soup:
                 jobs = self.extract_basic_job_info(soup)
-                # Add category information to each job
+                # Add category and location information to each job
                 for job in jobs:
                     job['category'] = category_name
+                    job['location'] = location  # Add the location where this job was found
                     if title:
                         job['search_title'] = title
                 

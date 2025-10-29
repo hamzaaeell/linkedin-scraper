@@ -51,12 +51,32 @@ python basic_linkedin_scraper.py
 ## Configuration Options
 
 - `categories`: Dictionary of job categories with arrays of job titles (see example config)
-- `location`: Job location (default: "United States")
+- `locations`: Array of job locations to search in (supports multiple countries)
 - `job_type`: Job type filter (0=onsite, 1=hybrid, 2=remote, empty=any)
 - `timespan`: Time filter (r84600 = 24 hours, r604800 = 1 week)
 - `pages_to_scrape`: Number of pages to scrape (default: 5)
 - `headers`: HTTP headers for requests
 - `proxies`: Proxy configuration (optional)
+
+### Multi-Country Support
+
+The scraper now supports searching across multiple countries simultaneously:
+
+```json
+{
+  "locations": [
+    "United States",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Australia",
+    "Canada",
+    "Bahrain",
+    "Qatar"
+  ]
+}
+```
+
+The scraper will search for all job titles in all specified locations, automatically removing duplicates across all countries and categories.
 
 ### Category Configuration
 
@@ -100,6 +120,7 @@ Each job entry contains:
 - `job_url`: Direct URL to the job posting (unique identifier)
 - `category`: Category name the job was found under
 - `search_title`: Specific job title that was searched for
+- `location`: Location where the job was found
 - `scraped_at`: Timestamp when the job was scraped
 
 ## Example Output
@@ -113,6 +134,7 @@ Each job entry contains:
     "job_url": "https://www.linkedin.com/jobs/view/123456789/",
     "category": "developer",
     "search_title": "Python Developer",
+    "location": "United States",
     "scraped_at": "2023-11-15T14:30:22.123456"
   },
   {
@@ -122,6 +144,7 @@ Each job entry contains:
     "job_url": "https://www.linkedin.com/jobs/view/987654321/",
     "category": "devops",
     "search_title": "DevOps Engineer",
+    "location": "Saudi Arabia",
     "scraped_at": "2023-11-15T14:30:22.123456"
   }
 ]
