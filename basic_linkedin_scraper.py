@@ -69,6 +69,7 @@ class BasicLinkedInScraper:
                 "Australia",
                 "Canada",
                 "Bahrain",
+                "Qatar"
             ],
             "job_type": "2",  # 0=onsite, 1=hybrid, 2=remote, empty=any
             "timespan": "r84600",  # r84600 = 24 hours, r604800 = 1 week
@@ -242,7 +243,7 @@ class BasicLinkedInScraper:
         
         return all_jobs
     
-    def _scrape_category(self, all_jobs, keywords, location, job_type, timespan, category_name, title=None):
+    def _scrape_category(self, all_jobs, keywords, location, job_type, timespan, category_name, title=None, search_location=None):
         """
         Scrape jobs for a specific category/title
         
@@ -254,6 +255,7 @@ class BasicLinkedInScraper:
             timespan (str): Time filter
             category_name (str): Name of the category
             title (str): Specific title being searched (optional)
+            search_location (str): Location name for display purposes (optional)
         """
         consecutive_zero_pages = 0
         max_consecutive_zero_pages = 2  # Stop after 2 consecutive pages with no jobs
