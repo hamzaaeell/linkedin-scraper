@@ -4,6 +4,7 @@ A lightweight Python script that extracts only the essential information from Li
 - Job title
 - Company name
 - Company LinkedIn URL
+- Job posting URL (for unique identification)
 
 This scraper is optimized for speed by skipping the time-consuming step of fetching individual job description pages.
 
@@ -15,6 +16,7 @@ This scraper is optimized for speed by skipping the time-consuming step of fetch
 - Export to CSV and JSON formats
 - Retry logic with exponential backoff
 - Proxy support
+- Automatic URL cleaning (removes tracking parameters)
 
 ## Installation
 
@@ -62,7 +64,8 @@ The scraper generates two files:
 Each job entry contains:
 - `title`: Job title
 - `company`: Company name
-- `company_url`: LinkedIn URL for the company
+- `company_url`: Clean LinkedIn URL for the company (tracking parameters removed)
+- `job_url`: Direct URL to the job posting (unique identifier)
 - `scraped_at`: Timestamp when the job was scraped
 
 ## Example Output
@@ -73,16 +76,23 @@ Each job entry contains:
     "title": "Senior Python Developer",
     "company": "Tech Corp",
     "company_url": "https://www.linkedin.com/company/tech-corp",
+    "job_url": "https://www.linkedin.com/jobs/view/123456789/",
     "scraped_at": "2023-11-15T14:30:22.123456"
   },
   {
     "title": "Backend Engineer",
     "company": "StartupXYZ",
     "company_url": "https://www.linkedin.com/company/startupxyz",
+    "job_url": "https://www.linkedin.com/jobs/view/987654321/",
     "scraped_at": "2023-11-15T14:30:22.123456"
   }
 ]
 ```
+
+Note: The scraper automatically removes tracking parameters from company URLs, converting URLs like:
+`https://www.linkedin.com/company/tech-corp?trk=public_jobs_jserp-result_job-search-card-subtitle`
+to clean URLs like:
+`https://www.linkedin.com/company/tech-corp`
 
 ## Performance
 

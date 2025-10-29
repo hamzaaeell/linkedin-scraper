@@ -84,6 +84,25 @@ class BasicLinkedInScraper:
                     delay *= 2  # Exponential backoff
         return None
     
+    def clean_linkedin_url(self, url):
+        """
+        Clean LinkedIn URL by removing tracking parameters
+        
+        Args:
+            url (str): Original LinkedIn URL with tracking parameters
+            
+        Returns:
+            str: Cleaned URL without tracking parameters
+        """
+        if not url:
+            return url
+        
+        # Remove tracking parameters that start with '?trk='
+        if '?trk=' in url:
+            url = url.split('?trk=')[0]
+        
+        return url
+    
     def extract_basic_job_info(self, soup):
         """
         Extract only job title, company name, and company LinkedIn URL from search results page
@@ -112,10 +131,20 @@ class BasicLinkedInScraper:
                 company = company_element.text.strip().replace('\n', ' ') if company_element else ''
                 company_url = company_element.get('href', '') if company_element else ''
                 
+                # Clean up company URL by removing tracking parameters
+                company_url = self.clean_linkedin_url(company_url)
+                
+                # Extract job URL from parent div
+                parent_div = item.parent
+                entity_urn = parent_div.get('data-entity-urn', '')
+                job_posting_id = entity_urn.split(':')[-1] if entity_urn else ''
+                job_url = f'https://www.linkedin.com/jobs/view/{job_posting_id}/' if job_posting_id else ''
+                
                 job = {
                     'title': title,
                     'company': company,
                     'company_url': company_url,
+                    'job_url': job_url,
                     'scraped_at': datetime.now().isoformat()
                 }
                 joblist.append(job)
@@ -128,7 +157,7 @@ class BasicLinkedInScraper:
     
     def remove_duplicates(self, joblist):
         """
-        Remove duplicate jobs based on title and company
+        Remove duplicate jobs based on job URL (primary) and title/company (fallback)
         
         Args:
             joblist (list): List of job dictionaries
@@ -141,7 +170,13 @@ class BasicLinkedInScraper:
         
         for job in joblist:
             # Create a unique identifier for the job
-            identifier = (job['title'].lower(), job['company'].lower())
+            # Primary identifier: job URL (most reliable)
+            # Fallback identifier: title and company combination
+            if job.get('job_url'):
+                identifier = job['job_url']
+            else:
+                identifier = (job['title'].lower(), job['company'].lower())
+            
             if identifier not in seen:
                 seen.add(identifier)
                 unique_jobs.append(job)
