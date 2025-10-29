@@ -1,0 +1,16 @@
+{
+  "keywords": "python developer",
+  "location": "United States",
+  "job_type": "2",
+  "timespan": "r84600",
+  "pages_to_scrape": 3,
+  "days_to_scrape": 7,
+  "title_keywords_include": ["python", "developer", "backend"],
+  "title_keywords_exclude": ["senior", "lead", "manager"],
+  "company_exclude": [],
+  "languages": ["en"],
+  "remote_only": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  }
+}
